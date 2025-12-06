@@ -196,7 +196,7 @@ feature_order = bundle["feature_order"]
 
 
 brand_models = {
-    "Maruti": ["Alto","Swift","Swift Dzire", "Baleno hatchback","Celerio","Ertiga", "Dzire", "Ignis","Wagon R","Ritz","S-Cross","Vitara Brezza","Ciaz","Other"],
+    "Maruti": ["Alto","Swift","Swift Dzire", "Suzuki Baleno","Celerio","Ertiga", "Dzire", "Ignis","Wagon R","Ritz","S-Cross","Vitara Brezza","Ciaz","Other"],
     "Hindustan": ["Ambassador"],
     "Audi": ["A4", "A6","A7","Q3", "Q5", "Q6", "Q7", "A3","Other"],
     "Hyundai": ["i20", "i10", "Creta","Eon", "Accent", "Venue","Other"],
@@ -381,6 +381,7 @@ if st.button("🔮 Predict Price"):
         unsafe_allow_html=True
 
     )
+
 
 
 
