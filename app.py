@@ -184,8 +184,6 @@ st.markdown("""
 # ---------------------------
 # Load model artifacts (your existing pipeline)
 # ---------------------------
-import dill
-
 with open("car_price_pipeline.pkl", "rb") as f:
     bundle = pickle.load(f)
 
@@ -383,5 +381,6 @@ if st.button("🔮 Predict Price"):
         unsafe_allow_html=True
 
     )
+
 
 
