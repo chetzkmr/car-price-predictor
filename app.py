@@ -187,8 +187,7 @@ st.markdown("""
 import dill
 
 with open("car_price_pipeline.pkl", "rb") as f:
-    bundle = dill.load(f)
-
+    bundle = pickle.load(f)
 
 model = bundle["model"]
 scaler = bundle["scaler"]
@@ -384,4 +383,5 @@ if st.button("🔮 Predict Price"):
         unsafe_allow_html=True
 
     )
+
 
