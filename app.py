@@ -184,8 +184,11 @@ st.markdown("""
 # ---------------------------
 # Load model artifacts (your existing pipeline)
 # ---------------------------
-import joblib
-bundle = joblib.load("car_price_pipeline.pkl")
+import dill
+
+with open("car_price_pipeline.pkl", "rb") as f:
+    bundle = dill.load(f)
+
 
 model = bundle["model"]
 scaler = bundle["scaler"]
@@ -381,3 +384,4 @@ if st.button("🔮 Predict Price"):
         unsafe_allow_html=True
 
     )
+
