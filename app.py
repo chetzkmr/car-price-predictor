@@ -184,8 +184,8 @@ st.markdown("""
 # ---------------------------
 # Load model artifacts (your existing pipeline)
 # ---------------------------
-with open("car_price_pipeline.pkl", "rb") as f:
-    bundle = pickle.load(f)
+import joblib
+bundle = joblib.load("car_price_pipeline.pkl")
 
 model = bundle["model"]
 scaler = bundle["scaler"]
@@ -379,4 +379,5 @@ if st.button("🔮 Predict Price"):
     st.markdown(
         f"<div class='result'>💰 Estimated Price: <strong>₹ {round(final_price,2)} Lakhs</strong></div>",
         unsafe_allow_html=True
+
     )
