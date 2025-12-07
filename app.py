@@ -126,6 +126,7 @@ st.markdown("""
 /* Buttons */
 .stButton > button {
     color: black;
+    background-color: #1E90FF;
     padding: 10px 18px;
     border-radius: 10px;
     font-size: 16px;
@@ -381,6 +382,7 @@ if st.button("🔮 Predict Price"):
         unsafe_allow_html=True
 
     )
+
 
 
 
