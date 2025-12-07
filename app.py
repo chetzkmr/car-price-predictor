@@ -337,7 +337,7 @@ st.markdown("<div class='small-muted'></div>", unsafe_allow_html=True)
 type_addition = 0
 if car_type == "Sedan":
     type_addition = 1
-elif car_type == "SUV / Crossover":
+elif car_type == "SUV/Cross-over":
     type_addition = 2
 
 car_age = datetime.datetime.now().year - year
@@ -382,6 +382,7 @@ if st.button("🔮 Predict Price"):
         unsafe_allow_html=True
 
     )
+
 
 
 
