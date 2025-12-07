@@ -70,7 +70,7 @@ st.markdown("""
     filter: grayscale(60%);
 }
 .hero .hero-glass {
-    backdrop-filter: blur(6px) saturate(120%);
+    backdrop-filter: blur(3px) saturate(120%);
     background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
     padding: 32px;
     border-radius: 12px;
@@ -113,15 +113,6 @@ st.markdown("""
     transform: scale(1.02);
 }
 .car-title { font-weight:700; margin-top:8px; }
-
-/* Neumorphic section title */
-.neu {
-    background: #f0f3f7;
-    border-radius: 12px;
-    padding: 10px;
-    box-shadow: 6px 6px 14px rgba(163,177,198,0.35), -6px -6px 14px rgba(255,255,255,0.7);
-    margin-bottom: 14px;
-}
 
 /* Buttons */
 .stButton > button {
@@ -382,6 +373,7 @@ if st.button("🔮 Predict Price"):
         unsafe_allow_html=True
 
     )
+
 
 
 
